@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Cipher Exists (Output structure is incorrect, cipher is not checked)",
+      "setup": "",
+      "run": "mvn -Dtest=OutputTest#testAnyCiphertextOutput test",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 8
+    },
+    {
+      "name": "Fail check (Either wrong number of characters or incorrect fail ouput)",
+      "setup": "",
+      "run": "mvn -Dtest=OutputTest#testFailCiphertextOutput test",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "Program runs (Does not run or cannot take two inputs)",
+      "setup": "",
+      "run": "mvn -Dtest=OutputTest#testRunExecution test",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Cypher Correctness Check (If structure is correct then final Cipher is incorrect)",
+      "setup": "",
+      "run": "mvn -Dtest=OutputTest#testBaseCiphertextOutput test",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}
